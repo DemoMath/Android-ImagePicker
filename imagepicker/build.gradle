@@ -1,0 +1,60 @@
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+                def dirs = ['main', 'example']
+                dirs.each { dir ->
+                    java.srcDir("src/$dir/java")
+                    res.srcDir("src/$dir/res")
+                }
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                def dirs = ['main']
+                //release模式下排除debug文件夹中的所有Java文件
+                java {
+                    exclude 'debug/**'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+
+    if(isModule.toBoolean()) {
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.squareup.picasso:picasso:2.5.2'
+        compile 'org.xutils:xutils:3.3.36'
+        compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+        compile 'com.lzy.widget:view-core:0.2.1'
+    }
+}

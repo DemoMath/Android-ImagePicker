@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bkjk_imagepicker_c_back_press">#323336</color>
+    <color name="bkjk_imagepicker_c_primary">#393A3F</color>
+    <color name="bkjk_imagepicker_c_primary_dark">#303135</color>
+    <color name="bkjk_imagepicker_c_primary_trans">#ec2f3335</color>
+    <color name="bkjk_imagepicker_c_press">#ffe0e0e0</color>
+    <color name="bkjk_imagepicker_c_camera_pre">#353535</color>
+    <color name="bkjk_imagepicker_c_accent">#1AAD19</color>
+    <color name="bkjk_imagepicker_c_secondary_inverted">#66ffffff</color>
+    <color name="bkjk_imagepicker_c_primary_inverted">#ffffff</color>
+</resources>

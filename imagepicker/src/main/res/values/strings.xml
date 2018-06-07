@@ -1,0 +1,14 @@
+<resources>
+    <string name="bkjk_imagepicker_s_all_images">所有图片</string>
+    <string name="bkjk_imagepicker_s_folder_image_count">共%1$d张</string>
+    <string name="bkjk_imagepicker_s_preview_image_count">%1$d/%2$d</string>
+    <string name="bkjk_imagepicker_s_select_limit">最多选择%1$d张图片</string>
+    <string name="bkjk_imagepicker_s_complete">完成</string>
+    <string name="bkjk_imagepicker_s_select_complete">完成(%1$d/%2$d)</string>
+    <string name="bkjk_imagepicker_s_preview">预览</string>
+    <string name="bkjk_imagepicker_s_preview_count">预览(%1$d)</string>
+    <string name="bkjk_imagepicker_s_photo_crop">图片裁剪</string>
+    <string name="bkjk_imagepicker_s_origin">原图</string>
+    <string name="bkjk_imagepicker_s_origin_size">原图(%1$s)</string>
+    <string name="bkjk_imagepicker_s_app_name">iamgepicker</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.bkjk.bkjkimagepicker">
+    <application
+        android:allowBackup="true"
+        android:label="@string/bkjk_imagepicker_s_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BKJKImagePickerTheme">
+        <activity android:name=".ui.IPImageCropActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.IPImageGridActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.IPImagePreviewActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.IPImagePreviewDelActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+    </application>
+
+</manifest>
